@@ -4,6 +4,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 /* Header Styles */
 .copa-america{
     display: flex;
@@ -24,7 +25,7 @@ body{
 .fa-arrow-right{
     margin-right: 8px;
 }
-a{
+.button{
     width: 168px;
     height: 44px;
     color: #FFFFFF;
@@ -38,16 +39,169 @@ a{
     height: 438px;
     margin-top: 135px;
 }
+.hover-class:hover{
+    height: 500px;
+    width: 600px;
+ }
+ .hover-class{
+        transition: 2s ease 0.5s;
+ }
+/* body part's styles start here */
+
+/* top players (grid) style */
 .top-players{
+    width: 1050px;
+    height: 2250px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
+    grid-gap: 30px 27px;
+    padding: 100px;
+    padding-top: 70px;
+    
 }
 .players{
     width: 330px;
     height: 474px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    padding-right: 0%;
 }
 .top-players img{
     width: 300px; 
     height: 256px;
 }
+.players .player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+/* highlights part's design */
+.highlights{
+    display: flex;
+}
+
+.highlight-info{
+    width: 469px;
+    height: 241px;
+    padding-left: 150px;
+    padding-right: 20px;
+}
+.highlight-info p{
+    margin-bottom: 24px;
+}
+.watch{
+    padding-left: 8px;
+}
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    margin-bottom: 0%;
+}
+.highlights img{
+    width: 567px;
+    height: 427px;  
+}
+/* high profile section */
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+.photo-frame {
+    width: 300px;
+    height: 200px;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+}
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+.photo-frame:hover {
+    display: block;
+    background-color: rgba(199, 180, 134, 0.7);
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+}
+/* login section styles */
+.subscribe{
+    text-align: center;
+    height: 450px;
+    margin-top: 100px;
+}
+.subscribe p{
+    font-size: 1.5em;
+}
+.color{
+    color: darkmagenta;
+}
+.subscribe-channel input:hover{
+    background-color: rgba(141, 104, 104, 0.397);
+}
+button:hover{
+    background-color: rgba(118, 118, 163, 0.733);
+    color: white;
+}
+/* footer styles */
+
+.footers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+    width: 50%;
+    text-align: center;
+}
+.icon-social a{
+    height: 32px;
+    width: 32px;
+    color: gray;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.icon-social a:hover{
+    color: blue
+}
+.copy-right{
+    margin-top: 20px;
+}
+/* media query */
+@media only screen and (max-width:688px) {
+    .copa-america {       
+        width: 50%;
+        height: 50%;
+}
+.container{
+    width: 100%;
+}
+.footers{
+    padding: 0;
+}
+.logo {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+.copy-right {
+    margin: 0 60px;
+}
+
+
